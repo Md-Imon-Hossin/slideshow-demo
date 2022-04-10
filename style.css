@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.slideshow-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: beige;
+}
+.slideshow-elements{
+   text-align: center;
+
+}
+.slideshow-element{
+    position: absolute;
+     transform: translate(-50%,-50%) scale(0);
+   transition: transform 0.4s;
+
+}
+.slideshow-element.current{
+    transform: translate(-50% ,-50%) scale(1);
+    transition: transform 0.4s;
+
+}
+.slideshow-element span{
+    display: inline-block;
+    font-size: 8rem;
+    color: coral;
+
+}
+.slideshow-element h2{
+    font-size: 8rem;
+color: coral;
+}
